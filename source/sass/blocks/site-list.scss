@@ -1,0 +1,16 @@
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  line-height: 24px;
+  color: $color-black;
+  padding: 28.5px 59px 26.5px 76px;
+
+  &:focus,
+  &:hover {
+    color: lighten($color-black, 40%);
+  }
+
+  &:active {
+    color: lighten($color-black, 70%);
+  }
+}

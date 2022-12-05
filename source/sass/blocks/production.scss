@@ -1,0 +1,30 @@
+.production {
+  padding: 21.5px 30px 58px 30px;
+}
+
+.production__title {
+  text-align: right;
+  margin: 0;
+  font-size: 100%;
+  line-height: 24px;
+  padding-bottom: 26.5px;
+}
+
+.production__details {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-charcoal;
+  margin: 0;
+  padding: 35px 0 41px 34px;
+}
+
+.production__video {
+  position: relative;
+}
+
+.production__play-button {
+  position: absolute;
+  top: 37px;
+  left: 80.1px;
+}

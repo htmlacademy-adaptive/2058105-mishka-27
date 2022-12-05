@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>"Мишка"</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="./images/mishka-logo-mobile.svg.svg" width="85.97" height="34.92" alt="Логотип магазина 'Мишка'.">
+      <img src="./img/mishka-logo-mobile.svg.svg" width="85.97" height="34.92" alt="Логотип магазина 'Мишка'.">
     </a>
     <nav class="main-header__navigation navigation">
       <button class="navigation__toggle" type="button">
@@ -43,8 +44,10 @@
   </header>
   <main class="main-container">
   <h1 class="visually-hidden">Магазин вязаных изделий "Мишка".</h1>
+  <section class="hero">
+    <h2 class="hero__title">Милые штуки ручной<br> работы для дома</h2>
+  </section>
   <section class="promo">
-    <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
     <ul class="promo__list">
       <li class="promo__item">
        <a class="promo__link promo__link--interior" href="#">Предметы интерьера</a>
@@ -73,7 +76,7 @@
           <dd class="popular-product__description">15 см</dd>
         </div>
       </dl>
-      <img class="popular-product__image" src="./images/popular-product.jpg" width="260" height="315" alt="Три вязаные корзинки разных размеров.">
+      <img class="popular-product__image" src="./img/popular-product.jpg" width="260" height="315" alt="Три вязаные корзинки разных размеров.">
       <span class="popular-product__price">Цена: 990 руб.</span>
       <a class="popular-product__button button" href="#">Заказать</a>
   </section>
@@ -81,22 +84,22 @@
     <h2 class="advantages__title">Коротко о нас:</h2>
     <ul class="advantages__list">
       <li class="advantages__item advantages__item--flower">
-        Экологически чистые материалы
+        Экологически<br> чистые материалы
       </li>
       <li class="advantages__item advantages__item--picture">
-        Скандинавский стиль по российской цене
+        Скандинавский стиль<br> по российской цене
       </li>
       <li class="advantages__item advantages__item--heart">
-        Увеличивает лайки на фотографиях
+        Увеличивает лайки<br> на фотографиях
       </li>
       <li class="advantages__item advantages__item--ball">
-        Связано вручную с любовью и умилением
+        Связано вручную<br> с любовью и умилением
       </li>
       <li class="advantages__item advantages__item--rocket">
         Поддержка отечественного производителя
       </li>
       <li class="advantages__item advantages__item--gift">
-        Поставляется в подарочной упаковке
+        Поставляется<br> в подарочной упаковке
       </li>
     </ul>
   </section>
@@ -113,10 +116,10 @@
       </div>
     </blockquote>
     <div class="reviews__buttons">
-      <button class="reviews__buttons-back" type="button">
+      <button class="reviews__button review__button--back" type="button">
         <span class="visually-hidden">Предыдущий отзыв.</span>
       </button>
-      <button class="reviews__buttons-next" type="button">
+      <button class="reviews__button reviews__button--next" type="button">
         <span class="visually-hidden">Следующий отзыв.</span>
       </button>
     </div>
@@ -142,13 +145,19 @@
     <h3 class="visually-hidden">Социальные сети.</h3>
     <ul class="main-footer__social social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden"> Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы в Ютубе</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в Телеграме</span>
+        </a>
       </li>
     </ul>
     <span class="main-footer__copyright">Разработано:</span>
@@ -157,7 +166,7 @@
       </a>
   </footer>
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
+    <h2 class="modal__title">Добавить<br> в корзину</h2>
     <span class="modal__details">Выберите размер:</span>
     <form class="modal__form" action="https://echo.htmlacademy.ru">
       <ul class="modal__list">
@@ -176,7 +185,7 @@
             <span class="visually-hidden">Размер "L".</span>
         </li>
       </ul>
-      <button class="modal__button button" type="submit">Добавить</button>
+      <button class="modal__button button button--modal" type="submit">Добавить</button>
     </form>
   </section>
 </body>
