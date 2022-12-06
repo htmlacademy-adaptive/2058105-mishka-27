@@ -2,7 +2,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  margin-top: 34.5px;
+  margin-top: 34px;
 }
 
 .form__title {
@@ -48,20 +48,21 @@
   border: none;
   border-bottom: 2px solid $color-black;
   width: 100%;
-  padding-top: 14.15px;
-  padding-bottom: 19.85px;
+  padding-top: 14px;
+  padding-bottom: 20px;
 }
 
 .form__input-email {
   border: none;
   border-bottom: 2px solid $color-black;
   width: 100%;
-  padding-top: 15.85px;
-  padding-bottom: 18.15px;
+  padding-top: 16px;
+  padding-bottom: 18px;
 }
 
 .form__textarea {
+  box-sizing: border-box;
   border: 2px solid $color-black;
   padding: 17px;
+  width: 260px;
 }
-

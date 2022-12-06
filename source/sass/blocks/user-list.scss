@@ -5,19 +5,19 @@
   color: $color-black;
 
   &--search {
-    padding: 27.5px 77px 27.5px 76px;
+    padding: 28px 77px 27px 76px;
   }
 
   &--cart {
-    padding: 28.5px 33px 26.5px 76px;
+    padding: 28px 33px 27px 76px;
   }
 
   &:focus,
   &:hover {
-    color: lighten($color-black, 40%);
+    color: rgba($color-black, 0.6);
   }
 
   &:active {
-    color: lighten($color-black, 70%);
+    color: rgba($color-black, 0.3);
   }
 }
