@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 10px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-black;
+  border: 2px solid $color-charcoal;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  width: 260px;
+
+  &:focus,
+  &:hover {
+    color: $color-white;
+    background-color: $color-charcoal;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+
+  &--modal {
+    background-color: $color-downy;
+    color: $color-white;
+    border: none;
+
+    &:focus,
+    &:hover {
+      background-color: $color-puerto-rico;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
+  }
+}

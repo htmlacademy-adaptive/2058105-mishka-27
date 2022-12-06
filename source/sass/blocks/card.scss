@@ -1,0 +1,28 @@
+.card {
+  text-align: center;
+}
+
+.card__title {
+  font-family: inherit;
+  line-height: 24px;
+  color: $color-black;
+  font-size: 100%;
+  margin: 0;
+}
+
+.card__link {
+  text-decoration: none;
+  display: block;
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.card__price {
+  font-size: 15px;
+  line-height: 24px;
+}

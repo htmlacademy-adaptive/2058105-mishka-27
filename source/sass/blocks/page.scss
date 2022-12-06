@@ -1,0 +1,14 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: $ff-body;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-black;
+  background-color: $color-white;
+  width: 320px;
+  margin: 0 auto;
+}
