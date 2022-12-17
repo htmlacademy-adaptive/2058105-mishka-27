@@ -1,12 +1,28 @@
 .form-section {
   padding: 17px 29px 55px 29px;
+
+  @media (min-width: $vp-768) {
+    padding: 66px 50px 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 115px 97px 50px;
+  }
 }
 
 .form-section__description {
+  margin: 0;
+  padding-bottom: 29px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: $color-charcoal;
-  margin: 0;
-  padding-bottom: 29px;
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 63px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

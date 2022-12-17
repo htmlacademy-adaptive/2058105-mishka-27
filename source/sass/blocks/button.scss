@@ -1,22 +1,24 @@
 .button {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   padding: 16px 10px;
-  font-family: inherit;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: $color-black;
-  border: 2px solid $color-charcoal;
-  text-decoration: none;
+  font-family: inherit;
   text-align: center;
+  color: $color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: transparent;
-  width: 260px;
+  border: 2px solid $color-charcoal;
 
   &:focus,
   &:hover {
     color: $color-white;
+
     background-color: $color-charcoal;
   }
 
@@ -25,8 +27,9 @@
   }
 
   &--modal {
-    background-color: $color-downy;
     color: $color-white;
+
+    background-color: $color-downy;
     border: none;
 
     &:focus,
@@ -37,5 +40,10 @@
     &:active {
       color: rgba($color-white, 0.3);
     }
+  }
+
+  &--form {
+    font-size: 17px;
+    line-height: 16px;
   }
 }

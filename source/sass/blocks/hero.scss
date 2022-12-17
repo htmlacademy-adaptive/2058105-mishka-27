@@ -1,13 +1,25 @@
 .hero {
+  background-color: $color-snow;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
 }
 
 .hero__title {
-  text-align: center;
-  padding: 73px 30px 120px 30px;
   margin: 0;
+  padding: 73px 30px 120px 30px;
+
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

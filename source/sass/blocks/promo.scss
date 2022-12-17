@@ -1,7 +1,12 @@
 .promo__list {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
 }
 
 .promo__item:nth-child(odd) {
@@ -13,11 +18,25 @@
 }
 
 .promo__link {
+  display: block;
   padding: 24px 160px 31px 30px;
+
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: $color-white;
   text-decoration: none;
-  display: block;
+
+  @media (min-width: $vp-768) {
+    padding: 25px 167px 34px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.promo__item {
+  @media (min-width: $vp-768) {
+    width: 50%;
+  }
 }

@@ -1,6 +1,41 @@
 .reviews {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 58px 30px 45px;
+
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    padding: 82px 50px 47px 50px;
+
+    background-image: url("../img/content/reviews.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 0 50px;
+    padding: 78px 0 96px 174px;
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  padding-bottom: 14px;
+
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 38px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-bottom: 35px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__content {
@@ -8,17 +43,38 @@
 }
 
 .reviews__text {
+  margin: 0;
+  padding-bottom: 33px;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: $color-charcoal;
-  margin-top: 4px;
-  margin-bottom: 33px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 38px;
+    padding-bottom: 61px;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-bottom: 44px;
+  }
+}
+
+.reviews__autor {
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__autor-name {
   font-style: normal;
   line-height: 24px;
+
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+  }
 }
 
 .reviews__autor-link {
@@ -32,16 +88,35 @@
   display: flex;
   margin-top: 30px;
   margin-bottom: 38px;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 352px;
+    right: 50px;
+  }
 }
 
 .reviews__button {
-  padding: 13px 42px 13px 37px;
-  border: 1px solid $color-whisper;
-  background-color: transparent;
-  height: 52px;
   width: 50%;
+  height: 52px;
+  padding: 13px 42px 13px 37px;
+
+  background-color: transparent;
+  border: 1px solid $color-whisper;
 
   &--back {
     border-right: none;
+  }
+}
+
+.reviews__write-button {
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 82px;
+    right: 50px;
+
+    width: 175px;
+
+    font-size: 17px;
   }
 }

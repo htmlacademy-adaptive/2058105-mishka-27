@@ -2,15 +2,16 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>"Мишка"</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="./img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
-    </a>
     <nav class="main-header__navigation navigation">
+      <a class="navigation__logo">
+        <img class="navigation__image" src="./img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+      </a>
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню.</span>
       </button>
@@ -30,7 +31,7 @@
         <ul class="navigation__list user-list">
           <li class="user-list__item">
             <a class="user-list__link user-list__link--search" href="#">
-              Поиск по сайту
+              <span class="user-list__text">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-list__item">
@@ -39,6 +40,19 @@
             </a>
           </li>
         </ul>
+        <ul class="navigation__list news-list">
+          <li class="news-list__item">
+            <a class="news-list__link" href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="news-list__item">
+            <a class="news-list__link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+      <p class="navigation__delivery">Бесплатная доставка по России</p>
       </div>
     </nav>
   </header>
@@ -50,18 +64,18 @@
   <section class="promo">
     <ul class="promo__list">
       <li class="promo__item">
-        <a class="promo__link promo__link--interior" href="#">Предметы интерьера</a>
+        <a class="promo__link promo__link--interior" href="#">Предметы<br> интерьера</a>
       </li>
       <li class="promo__item">
-        <a class="promo__link promo__link--toys" href="#">Детские игрушки</a>
+        <a class="promo__link promo__link--toys" href="#">Детские<br> игрушки</a>
       </li>
     </ul>
   </section>
   <section class="popular-product">
-    <h2 class="popular-product__title">Вязаные корзинки</h2>
-    <p class="popular-product__definition">товар недели</p>
-    <p class="popular-product__description">Экологически чистая пряжа,
-      ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+      <h2 class="popular-product__title">Вязаные корзинки</h2>
+      <p class="popular-product__definition">товар недели</p>
+    <p class="popular-product__text">Экологически чистая пряжа,<br>
+      ручная работа. Доступны в шести<br> расцветках и трёх размерах.</p>
       <dl class="popular-product__about">
         <div class="popular-product__wrapper">
           <dt class="popular-product__feature">Цвет:</dt>
@@ -96,7 +110,7 @@
         Связано вручную<br> с любовью и умилением
       </li>
       <li class="advantages__item advantages__item--rocket">
-        Поддержка отечественного производителя
+        Поддержка отечественного<br> производителя
       </li>
       <li class="advantages__item advantages__item--gift">
         Поставляется<br> в подарочной упаковке
