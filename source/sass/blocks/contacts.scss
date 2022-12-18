@@ -1,4 +1,9 @@
 .contacts {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.contacts__container {
   padding: 38px 30px 39px;
 
   @media (min-width: $vp-768) {

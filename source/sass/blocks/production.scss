@@ -1,4 +1,9 @@
 .production {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.production__container {
   display: flex;
   flex-direction: column;
   margin: 21px 30px 58px;

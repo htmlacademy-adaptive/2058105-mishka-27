@@ -1,7 +1,16 @@
-.hero {
+.hero__container {
+  max-width: 1050px;
+  margin: 0 auto;
+
   background-color: $color-snow;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
+}
+
+.hero {
+  width: 100%;
+
+  background-color: $color-snow;
 }
 
 .hero__title {

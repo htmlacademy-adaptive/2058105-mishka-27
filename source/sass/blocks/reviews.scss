@@ -1,4 +1,9 @@
 .reviews {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.reviews__container {
   padding: 58px 30px 45px;
 
   @media (min-width: $vp-768) {

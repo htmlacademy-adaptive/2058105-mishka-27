@@ -59,19 +59,24 @@
   <main class="main-container">
   <h1 class="visually-hidden">Магазин вязаных изделий "Мишка".</h1>
   <section class="hero">
-    <h2 class="hero__title">Милые штуки ручной<br> работы для дома</h2>
+    <div class="hero__container">
+      <h2 class="hero__title">Милые штуки ручной<br> работы для дома</h2>
+    </div>
   </section>
   <section class="promo">
-    <ul class="promo__list">
-      <li class="promo__item">
-        <a class="promo__link promo__link--interior" href="#">Предметы<br> интерьера</a>
-      </li>
-      <li class="promo__item">
-        <a class="promo__link promo__link--toys" href="#">Детские<br> игрушки</a>
-      </li>
-    </ul>
+    <div class="promo__container">
+      <ul class="promo__list">
+        <li class="promo__item">
+          <a class="promo__link promo__link--interior" href="#">Предметы<br> интерьера</a>
+        </li>
+        <li class="promo__item">
+          <a class="promo__link promo__link--toys" href="#">Детские<br> игрушки</a>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="popular-product">
+    <div class="popular-product__container">
       <h2 class="popular-product__title">Вязаные корзинки</h2>
       <p class="popular-product__definition">товар недели</p>
     <p class="popular-product__text">Экологически чистая пряжа,<br>
@@ -93,66 +98,73 @@
       <img class="popular-product__image" src="./img/popular-product.jpg" width="260" height="315" alt="Три вязаные корзинки разных размеров.">
       <span class="popular-product__price">Цена: 990 руб.</span>
       <a class="popular-product__button button" href="#">Заказать</a>
+    </div>
   </section>
   <section class="advantages">
-    <h2 class="advantages__title">Коротко о нас:</h2>
-    <ul class="advantages__list">
-      <li class="advantages__item advantages__item--flower">
-        Экологически<br> чистые материалы
-      </li>
-      <li class="advantages__item advantages__item--picture">
-        Скандинавский стиль<br> по российской цене
-      </li>
-      <li class="advantages__item advantages__item--heart">
-        Увеличивает лайки<br> на фотографиях
-      </li>
-      <li class="advantages__item advantages__item--ball">
-        Связано вручную<br> с любовью и умилением
-      </li>
-      <li class="advantages__item advantages__item--rocket">
-        Поддержка отечественного<br> производителя
-      </li>
-      <li class="advantages__item advantages__item--gift">
-        Поставляется<br> в подарочной упаковке
-      </li>
-    </ul>
-  </section>
-  <section class="reviews">
-    <h2 class="reviews__title">Отзывы</h2>
-    <blockquote class="reviews__content">
-      <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-        у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-        и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-      </p>
-      <div class="reviews__autor">
-        <cite class="reviews__autor-name">Анастасия Красильникова</cite>
-        <cite class="reviews__autor-link">@misssssiskras</cite>
-      </div>
-    </blockquote>
-    <div class="reviews__buttons">
-      <button class="reviews__button review__button--back" type="button">
-        <span class="visually-hidden">Предыдущий отзыв.</span>
-      </button>
-      <button class="reviews__button reviews__button--next" type="button">
-        <span class="visually-hidden">Следующий отзыв.</span>
-      </button>
-    </div>
-    <a class="reviews__write-button button" href="#">Написать</a>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <ul class="contacts__company">
-        <li class="contacts__item">
-          <span class="contacts__name">e-mail:</span>
-          <a class="contacts__description">info@mimimishkashop.ru</a>
+    <div class="advantages__container">
+      <h2 class="advantages__title">Коротко о нас:</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--flower">
+          Экологически<br> чистые материалы
         </li>
-        <li class="contacts__item">
-          <span class="contacts__name">адрес:</span>
-          <span class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
+        <li class="advantages__item advantages__item--picture">
+          Скандинавский стиль<br> по российской цене
+        </li>
+        <li class="advantages__item advantages__item--heart">
+          Увеличивает лайки<br> на фотографиях
+        </li>
+        <li class="advantages__item advantages__item--ball">
+          Связано вручную<br> с любовью и умилением
+        </li>
+        <li class="advantages__item advantages__item--rocket">
+          Поддержка отечественного<br> производителя
+        </li>
+        <li class="advantages__item advantages__item--gift">
+          Поставляется<br> в подарочной упаковке
         </li>
       </ul>
-      <div class="contacts__map"></div>
-      <a class="contacts__button button" href="#">Напишите нам</a>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="reviews__container">
+      <h2 class="reviews__title">Отзывы</h2>
+      <blockquote class="reviews__content">
+        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+          у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+          и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <div class="reviews__autor">
+          <cite class="reviews__autor-name">Анастасия Красильникова</cite>
+          <cite class="reviews__autor-link">@misssssiskras</cite>
+        </div>
+      </blockquote>
+      <div class="reviews__buttons">
+        <button class="reviews__button review__button--back" type="button">
+          <span class="visually-hidden">Предыдущий отзыв.</span>
+        </button>
+        <button class="reviews__button reviews__button--next" type="button">
+          <span class="visually-hidden">Следующий отзыв.</span>
+        </button>
+      </div>
+      <a class="reviews__write-button button" href="#">Написать</a>
+    </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__container">
+        <h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__company">
+          <li class="contacts__item">
+            <span class="contacts__name">e-mail:</span>
+            <a class="contacts__description">info@mimimishkashop.ru</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__name">адрес:</span>
+            <span class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
+          </li>
+        </ul>
+        <div class="contacts__map"></div>
+        <a class="contacts__button button" href="#">Напишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">

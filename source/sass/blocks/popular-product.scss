@@ -1,4 +1,9 @@
 .popular-product {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.popular-product__container {
   display: flex;
   flex-direction: column;
   padding: 31px 30px 36px 30px;

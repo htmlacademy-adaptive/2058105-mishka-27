@@ -1,4 +1,9 @@
 .form-section {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.form-section__container {
   padding: 17px 29px 55px 29px;
 
   @media (min-width: $vp-768) {
