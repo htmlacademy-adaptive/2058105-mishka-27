@@ -1,19 +1,14 @@
 .main-header {
-  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  @media (min-width: $vp-768) {
+    background-color: $color-snow;
+  }
 }
 
-.main-header__logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
-
-  &:focus,
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
+.main-header-color {
+  @media (min-width: $vp-768) {
+    background-color: $color-white-smoke;
   }
 }

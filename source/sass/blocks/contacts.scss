@@ -1,29 +1,85 @@
 .contacts {
-  padding-left: 29px;
-  padding-right: 30px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.contacts__container {
+  padding: 38px 30px 39px;
+
+  @media (min-width: $vp-768) {
+    padding: 68px 50px 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 71px 49px 105px 113px;
+    padding: 0;
+    padding-left: 111px;
+  }
 }
 
 .contacts__title {
+  margin: 0;
+  padding-bottom: 28px;
+
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 49px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    @media (min-width: $vp-1150) {
+      padding-bottom: 34px;
+
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
 }
 
 .contacts__company {
   margin: 0;
   margin-bottom: 62px;
   padding: 0;
+
   list-style-type: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: $vp-1150) {
+    flex-direction: column;
+  }
 }
 
 .contacts__item {
   display: grid;
+
   grid-template-columns: 76px 183px;
+
+  @media (min-width: $vp-768) {
+    grid-template-columns: 80px 230px;
+
+    &:nth-child(2) {
+      grid-template-columns: 80px 257px;
+    }
+  }
 }
 
 .contacts__button {
-  margin-bottom: 39px;
+  width: 260px;
+
+  @media (min-width: $vp-768) {
+    width: 230px;
+  }
 }

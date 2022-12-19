@@ -1,9 +1,10 @@
 .site-list__link {
   display: block;
-  text-decoration: none;
+  padding: 28px 59px 27px 76px;
+
   line-height: 24px;
   color: $color-black;
-  padding: 28px 59px 27px 76px;
+  text-decoration: none;
 
   &:focus,
   &:hover {
@@ -12,5 +13,36 @@
 
   &:active {
     color: rgba($color-black, 0.3);
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 30px;
+  }
+}
+
+.site-list {
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-right: 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+
+      width: 200vw;
+
+      background-color: #ffffff;
+    }
   }
 }

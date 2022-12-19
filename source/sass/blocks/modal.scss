@@ -1,13 +1,31 @@
 .modal {
+  display: none;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   padding: 28px 30px 46px 30px;
+
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    width: 566px;
+    padding: 38px 92px 46px 93px;
+  }
 }
 
 .modal__title {
   margin: 0;
   padding-bottom: 14px;
+
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .modal__details {
@@ -15,19 +33,25 @@
   font-size: 15px;
   line-height: 30px;
   color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    font-size: 17px;
+  }
 }
 
 .modal__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 7px;
   margin: 0;
   padding: 0;
   padding-top: 21px;
+
   list-style-type: none;
+
+  gap: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .modal__button {
-  margin-top: 31px;
   width: 260px;
+  margin-top: 31px;
 }

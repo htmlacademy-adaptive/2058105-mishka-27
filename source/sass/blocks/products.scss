@@ -1,12 +1,30 @@
 .products {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.products__container {
   padding: 30px;
 }
 
 .products__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+
+  gap: 30px;
+
+  @media (min-width: $vp-768) {
+    gap: 54px;
+  }
+
+  @media (min-width: $vp-1150) {
+    flex-direction: row;
+
+    gap: 51px;
+  }
 }

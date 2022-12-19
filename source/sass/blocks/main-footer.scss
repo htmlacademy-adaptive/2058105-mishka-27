@@ -1,12 +1,25 @@
+.main-footer {
+  background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 50px 58px;
+  }
+}
+
 .main-footer__social {
   margin: 25px 89px 28px 89px;
+
+  background-color: $color-white-smoke;
 }
 
 .main-footer__copyright {
   display: flex;
   justify-content: center;
-  font-size: 19px;
-  line-height: 18px;
   padding-top: 29px;
   padding-bottom: 32px;
+
+  font-size: 19px;
+  line-height: 18px;
 }
