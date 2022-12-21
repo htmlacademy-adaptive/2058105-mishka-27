@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 30px;
+    padding: 20px 0;
   }
 }
 
@@ -26,6 +26,10 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
+    gap: 37px;
+
+
+    padding-left: 30px;
 
     grid-column: 1/2;
     grid-row: 2/3;
@@ -33,6 +37,10 @@
 
   @media (min-width: $vp-1150) {
     padding-right: 100px;
+    gap: 60px;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
 
     &::before {
       content: "";
@@ -44,5 +52,13 @@
 
       background-color: #ffffff;
     }
+  }
+}
+
+.site-list__item {
+  border-top: 1px solid $color-whisper;
+
+  @media (min-width: $vp-768) {
+    border-top: none;
   }
 }

@@ -19,6 +19,7 @@
   margin: 0 auto;
   padding-top: 80px;
 
+
   @media (min-width: $vp-768) {
     padding-top: 0;
   }
@@ -26,8 +27,12 @@
 
 .navigation__toggle {
   position: absolute;
-  top: 27px;
+  top: 32px;
   right: 30px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $vp-768) {
     display: none;
@@ -111,4 +116,49 @@
     grid-column: 2/3;
     grid-row: 2/3;
   }
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 14px;
+
+  background: url("../img/svg/menu.svg");
+}
+
+.navigation--closed .navigation__wrapper {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__toggle::before {
+  content: "";
+  position: absolute;
+
+  width: 21px;
+  height: 20px;
+
+  background: url("../img/svg/menu-close.svg");
+}
+/*почему то здесь не работает z-index, поэтому меню оставила пока в потоке
+.navigation--opened .navigation__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: auto;
+  width: 100%;
+}
+*/
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__wrapper {
+  position: static;
+  min-height: 0;
 }

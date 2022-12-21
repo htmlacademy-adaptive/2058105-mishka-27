@@ -39,8 +39,6 @@
 .user-list {
   position: relative;
 
-  max-width: 400px;
-
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
@@ -72,5 +70,13 @@
 .user-list__text {
   @media (min-width: $vp-768) {
     display: none;
+  }
+}
+
+.user-list__item {
+  border-top: 1px solid $color-whisper;
+
+  @media (min-width: $vp-768) {
+    border-top: none;
   }
 }
