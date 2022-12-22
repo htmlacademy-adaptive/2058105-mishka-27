@@ -27,6 +27,8 @@
   color: $color-white;
   text-decoration: none;
 
+  cursor: pointer;
+
   @media (min-width: $vp-768) {
     padding: 25px 167px 34px 36px;
 
@@ -42,7 +44,35 @@
 }
 
 .promo {
+  position: relative;
+
   background-color: $color-snow;
+
+  @media (min-width: $vp-768) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+
+      width: 100%;
+      height: 24px;
+
+      background: url("../img/svg/zigzag-promo-desktop.svg") repeat-x center;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+
+      width: 100%;
+      height: 34px;
+
+      background: url("../img/svg/zigzag-promo-desktop2.svg") repeat-x center;
+    }
+  }
 }
 
 .promo__container {

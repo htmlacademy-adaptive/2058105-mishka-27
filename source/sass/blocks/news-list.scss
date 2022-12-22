@@ -1,12 +1,13 @@
 .news-list {
   display: none;
-  max-width: 400px;
+
 
   @media (min-width: $vp-1150) {
     display: flex;
     flex-wrap: wrap;
     grid-column: 1/2;
     grid-row: 2/3;
+    gap: 25px;
   }
 }
 

@@ -1,8 +1,18 @@
 .social {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 25px 0 28px;
 
   list-style-type: none;
+  width: 132px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .social__link {

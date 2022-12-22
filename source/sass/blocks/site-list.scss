@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 20px 0;
+    padding: 20px 20px 20px 0;
   }
 }
 
@@ -26,9 +26,6 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
-    gap: 37px;
-
-
     padding-left: 30px;
 
     grid-column: 1/2;
@@ -36,9 +33,9 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding-right: 100px;
-    gap: 60px;
+    padding-right: 0;
 
+    gap: 35px;
     grid-column: 1/2;
     grid-row: 1/2;
 
@@ -52,6 +49,16 @@
 
       background-color: #ffffff;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+
+      width: 200%;
+
+      border-bottom: 1px solid rgba($color-black, 0.1);
+    }
   }
 }
 
@@ -60,5 +67,14 @@
 
   @media (min-width: $vp-768) {
     border-top: none;
+  }
+
+  @media (min-width: $vp-1150) {
+    box-sizing: border-box;
+    width: 205px;
+
+    &--border {
+      border-right: 1px solid $color-whisper;
+    }
   }
 }

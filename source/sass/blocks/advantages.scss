@@ -55,11 +55,17 @@
 }
 
 .advantages__item {
+
   padding-top: 83px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  &--flower {
+    background: url("../img/svg/flower.svg") no-repeat;
+    background-position: 5px 50px;
+  }
 
   @media (min-width: $vp-768) {
     width: 50%;
