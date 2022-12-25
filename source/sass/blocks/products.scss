@@ -5,6 +5,14 @@
 
 .products__container {
   padding: 30px;
+
+  @media (min-width: $vp-768) {
+    padding: 67px 50px 53px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 111px 50px 57px;
+  }
 }
 
 .products__list {
@@ -25,6 +33,6 @@
   @media (min-width: $vp-1150) {
     flex-direction: row;
 
-    gap: 51px;
+    justify-content: space-between;
   }
 }

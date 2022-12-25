@@ -15,7 +15,7 @@
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню.</span>
       </button>
-      <div class="navigation__wrapper navigation__wrapper--opened navigation__wrapper--nojs">
+      <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item site-list__item--border">
             <a class="site-list__link" href="catalog.html">
@@ -79,9 +79,11 @@
   </section>
   <section class="popular-product">
     <div class="popular-product__container">
-      <h2 class="popular-product__title">Вязаные корзинки</h2>
-      <p class="popular-product__definition">товар недели</p>
-    <p class="popular-product__text">Экологически чистая пряжа,<br>
+      <div class="popular-product__wrapper-title">
+        <h2 class="popular-product__title">Вязаные корзинки</h2>
+        <p class="popular-product__definition">товар недели</p>
+      </div>
+      <p class="popular-product__text">Экологически чистая пряжа,<br>
       ручная работа. Доступны в шести расцветках и трёх размерах.</p>
       <dl class="popular-product__about">
         <div class="popular-product__wrapper">
@@ -141,7 +143,7 @@
         </div>
       </blockquote>
       <div class="reviews__buttons">
-        <button class="reviews__button review__button--back" type="button">
+        <button class="reviews__button reviews__button--back" type="button">
           <span class="visually-hidden">Предыдущий отзыв.</span>
         </button>
         <button class="reviews__button reviews__button--next" type="button">

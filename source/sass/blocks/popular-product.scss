@@ -15,6 +15,7 @@
     @media (min-width: $vp-768) {
       max-width: 1050px;
       height: 17px;
+      padding: 0 50px;
 
       background: url("../img/svg/zigzag-tablet.svg") repeat-x center;
     }
@@ -22,7 +23,7 @@
     @media (min-width: $vp-1150) {
       height: 23px;
 
-      background: url("../img/svg/zigzag-desktop.svg") repeat-x center;
+      background: url("../img/svg/zigzag-desktop.svg") no-repeat center;
     }
   }
 }
@@ -35,10 +36,12 @@
 
   @media (min-width: $vp-768) {
     position: relative;
+
+    padding: 54px 50px 68px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 54px 50px 73px 225px;
+    padding: 115px 50px 73px 225px;
   }
 }
 
@@ -51,16 +54,12 @@
   color: $color-black;
 
   @media (min-width: $vp-768) {
-    padding-top: 40px;
-    padding-bottom: 37px;
-
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $vp-1150) {
-    padding-top: 61px;
-    padding-bottom: 35px;
+    order: 2;
 
     font-size: 53px;
     line-height: 57px;
@@ -88,16 +87,13 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    position: absolute;
-    top: 46px;
-    right: 0;
-
     width: 100px;
 
-    line-height: 17px;
+    text-align: center;
   }
 
   @media (min-width: $vp-1150) {
+    position: absolute;
     top: 123px;
     left: 82px;
   }
@@ -168,8 +164,12 @@
   @media (min-width: $vp-768) {
     position: absolute;
     top: 140px;
-    right: 30px;
+    right: 50px;
     z-index: -1;
+  }
+
+  @media (min-width: $vp-1150) {
+    top: 54px;
   }
 }
 
@@ -178,5 +178,17 @@
 
   @media (min-width: $vp-768) {
     width: 292px;
+  }
+}
+
+.popular-product__wrapper-title {
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-bottom: 35px;
   }
 }

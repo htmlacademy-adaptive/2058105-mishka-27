@@ -1,7 +1,39 @@
 .intro {
+  position: relative;
+
   min-height: 177px;
 
   background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    min-height: 238px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+
+      width: 100%;
+      height: 24px;
+
+      background: url("../img/svg/zigzag-promo-desktop.svg") repeat-x center;
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    min-height: 272px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+
+      width: 100%;
+      height: 34px;
+
+      background: url("../img/svg/zigzag-big.svg") repeat-x center;
+    }
+  }
 }
 
 .intro__title {

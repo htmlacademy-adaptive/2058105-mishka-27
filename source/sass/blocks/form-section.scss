@@ -25,7 +25,9 @@
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    padding-bottom: 63px;
+    max-width: 702px;
+    margin: 0 auto;
+    padding-bottom: 80px;
 
     font-size: 17px;
     line-height: 30px;

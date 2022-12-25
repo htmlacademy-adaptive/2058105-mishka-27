@@ -5,6 +5,7 @@
 .page__body {
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 
   font-weight: 700;
   font-size: 17px;
@@ -13,5 +14,4 @@
   color: $color-black;
 
   background-color: $color-white;
-  overflow-x: hidden;
 }

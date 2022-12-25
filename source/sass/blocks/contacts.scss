@@ -131,6 +131,7 @@
   position: absolute;
   top: 30px;
   left: 0;
+
   width: 167px;
   height: 1px;
 
@@ -138,5 +139,12 @@
 
   @media (min-width: $vp-768) {
     width: 204px;
+  }
+}
+
+.contacts__description--underline {
+  &:hover,
+  &:focus {
+    color: $color-downy;
   }
 }

@@ -21,7 +21,7 @@
 
 
     &--cart {
-      padding-left: 82px;
+      padding-left: 60px;
     }
 
 
@@ -43,7 +43,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
-    padding-right: 30px;
+    padding-right: 50px;
 
     grid-column: 2/3;
     grid-row: 1/2;
@@ -59,7 +59,7 @@
       width: 200vw;
       height: 100%;
 
-      background-color: #ffffff;
+      background-color: $color-white;
     }
   }
 
@@ -87,18 +87,16 @@
 .user-list__icon {
   position: absolute;
   top: 33;
-  left: 31px;
+  left: 30px;
 
   fill: rgba($color-black, 0.2);
+}
 
-  &:hover,
-  &:focus {
-    opacity: none;
+.user-list__item:focus .user-list__icon,
+.user-list__item:hover .user-list__icon {
+  fill: $color-downy;
+}
 
-    fill: $color-downy;
-  }
-
-  &:active {
-    fill: rgba($color-downy, 0.3);
-  }
+.user-list__item:active .user-list__icon {
+  fill: rgba($color-downy, 0.3);
 }

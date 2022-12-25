@@ -6,6 +6,7 @@
     content: "";
     position: absolute;
 
+    align-items: center;
     width: 100%;
     height: 6px;
 
@@ -14,6 +15,7 @@
     @media (min-width: $vp-768) {
       max-width: 1050px;
       height: 17px;
+      padding: 0 50px;
 
       background: url("../img/svg/zigzag-tablet.svg") repeat-x center;
     }
@@ -21,7 +23,7 @@
     @media (min-width: $vp-1150) {
       height: 23px;
 
-      background: url("../img/svg/zigzag-desktop.svg") repeat-x center;
+      background: url("../img/svg/zigzag-desktop.svg") no-repeat center;
     }
   }
 }
@@ -32,7 +34,7 @@
   @media (min-width: $vp-768) {
     position: relative;
 
-    padding: 82px 50px 47px 50px;
+    padding: 82px 50px 47px;
 
     background-image: url("../img/content/reviews.jpg");
     background-repeat: no-repeat;
@@ -132,8 +134,27 @@
   background-color: transparent;
   border: 1px solid $color-whisper;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-768) {
+    border: none;
+  }
+
   &--back {
+    background: url("../img/svg/arrow.svg") no-repeat center;
     border-right: none;
+  }
+
+  &--next {
+    background: url("../img/svg/arrow.svg") no-repeat center;
+    transform: scale(-1, 1);
   }
 }
 
