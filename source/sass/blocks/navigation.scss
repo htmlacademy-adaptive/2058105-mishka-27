@@ -143,16 +143,16 @@
 
   background: url("../img/svg/menu-close.svg");
 }
-/*почему то здесь не работает z-index, поэтому меню оставила пока в потоке
+/*
 .navigation--opened .navigation__wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  height: auto;
-  width: 100%;
-}
-*/
+    position: absolute;
+    top: 79px;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: auto;
+}*/
 
 .navigation--nojs .navigation__toggle {
   display: none;
