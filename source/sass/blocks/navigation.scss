@@ -143,8 +143,9 @@
 
   background: url("../img/svg/menu-close.svg");
 }
-/*
+
 .navigation--opened .navigation__wrapper {
+  @media (max-width: $vp-767) {
     position: absolute;
     top: 79px;
     left: 0;
@@ -152,7 +153,9 @@
 
     width: 100%;
     height: auto;
-}*/
+    background-color: $color-white;
+  }
+}
 
 .navigation--nojs .navigation__toggle {
   display: none;
