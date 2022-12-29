@@ -13,14 +13,14 @@
   }
 }
 
-.card:focus .card__wrapper,
-.card:hover .card__wrapper {
+.card:focus,
+.card:hover {
   @media (min-width: $vp-1150) {
     box-shadow: 0 6px 10px rgba($color-black, 0.1);
   }
 }
 
-.card:active .card__wrapper {
+.card:active {
   @media (min-width: $vp-1150) {
     box-shadow: 0 3px 5px rgba($color-black, 0.1);
   }
