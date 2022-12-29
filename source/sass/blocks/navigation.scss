@@ -47,6 +47,7 @@
   display: block;
 
   transform: translateX(-50%);
+  cursor: pointer;
 
   &:focus,
   &:hover {
@@ -153,6 +154,7 @@
 
     width: 100%;
     height: auto;
+
     background-color: $color-white;
   }
 }

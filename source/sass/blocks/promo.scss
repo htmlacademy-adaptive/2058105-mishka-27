@@ -59,6 +59,9 @@
 }
 
 .promo__item {
+  position: relative;
+
+  width: 100%;
   min-height: 103px;
 
   @media (min-width: $vp-768) {
@@ -106,4 +109,48 @@
 
 .form__label-name {
   text-align: center;
+}
+
+.promo__link--interior::after {
+  content: url("../img/svg/interior.svg");
+  position: absolute;
+  top: 23px;
+  right: 36px;
+
+  opacity: 0.5;
+
+  @media (min-width: $vp-768) {
+    top: 30px;
+  }
+}
+
+.promo__link--toys::after {
+  content: url("../img/svg/toy.svg");
+  position: absolute;
+  top: 21px;
+  right: 27px;
+
+  opacity: 0.5;
+
+
+  @media (min-width: $vp-768) {
+    top: 31px;
+    right: 33px;
+  }
+
+  @media (min-width: $vp-1150) {
+    right: 35px;
+  }
+}
+
+.promo__link--interior:focus::after,
+.promo__link--interior:hover::after,
+.promo__link--toys:focus::after,
+.promo__link--toys:hover::after {
+  opacity: 0.7;
+}
+
+.promo__link--interior:active::after,
+.promo__link--toys:active::after {
+  opacity: 0.3;
 }

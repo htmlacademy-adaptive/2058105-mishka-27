@@ -71,14 +71,14 @@
             <legend class="form__title">Тип</legend>
           </div>
           <ul class="form__list">
-            <li class="form__item">
+            <li class="form__item form__item-radio">
               <label class="form__label">
                 <input class="form__input-radio visually-hidden" type="radio" name="type-of-product" value="interior" checked>
                 <span class="form__input-mark"></span>
                   Аксессуар для интерьера
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-radio">
               <label class="form__label">
                 <input class="form__input-radio visually-hidden" type="radio" name="type-of-product" value="toy">
                 <span class="form__input-mark"></span>
@@ -92,42 +92,42 @@
             <legend class="form__title">Цвет</legend>
           </div>
           <ul class="form__list form__list-color">
-            <li class="form__item">
+            <li class="form__item form__item-color">
               <label class="form__label">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="color" value="white" checked>
                 <span class="form__input-color"></span>
                 Белый
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-color">
               <label class="form__label">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="color" value="gray" checked>
                 <span class="form__input-color"></span>
                 Серый
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-color">
               <label class="form__label">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="color" value="green">
                 <span class="form__input-color"></span>
                 Тиффани
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-color">
               <label class="form__label">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="color" value="black">
                 <span class="form__input-color"></span>
                 Черный
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-color">
               <label class="form__label">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="color" value="pink">
                 <span class="form__input-color"></span>
                 Розовый
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item-color">
               <label class="form__label">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="color" value="orange">
                 <span class="form__input-color"></span>
@@ -161,7 +161,16 @@
           </div>
           <label for="number">
             <span class="visually-hidden">Введите ваш номер телефона.</span>
-            <input class="form__input-number form__color" type="tel" name="number" id="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <div class="form__input-wrapper">
+
+              <input class="form__input-number form__color" type="tel" name="number" id="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <svg class="form__icon form__icon--tel" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.4395 24C17.0363 24 16.7339 24 16.3306 24C11.3911 23.4074 7.7621 21.1358 5.14113 18.2717C2.52016 15.4075 0.403226 11.7532 0 6.7162C0 6.22237 0 5.82731 0 5.33349C0.100806 4.44461 0.504032 3.85202 1.10887 3.25943C1.71371 2.56808 2.72177 1.77796 3.62903 1.6792C4.33468 1.6792 5.44355 2.17302 5.84677 2.76561C6.25 3.25943 6.45161 4.34584 6.65323 5.13596C6.85484 6.02484 7.25806 7.11125 7.15726 7.90137C6.95565 9.08655 5.34274 9.58037 4.93952 10.4693C6.55242 14.1235 9.07258 16.889 12.5 18.6667C13.3065 18.1729 14.1129 16.7902 15.3226 16.7902C15.7258 16.7902 16.3306 16.9877 16.7339 17.0865C17.2379 17.1852 17.6411 17.3828 18.0444 17.5803C18.75 17.8766 20.0605 18.1729 20.4637 18.7655C20.8669 19.3581 21.1694 20.3457 21.0685 20.9383C20.7661 22.2222 18.6492 23.6049 17.4395 24Z"/>
+                <path d="M12.6008 1.48147C18.5484 1.48147 23.4879 6.22217 23.4879 12.1481H25C25 5.43205 19.4556 0 12.6008 0V1.48147Z"/>
+                <path d="M12.6008 9.18506V10.7653C13.4073 10.7653 14.0121 11.3579 14.0121 12.148H15.625C15.625 10.5678 14.3145 9.18506 12.6008 9.18506Z"/>
+                <path d="M12.6008 6.12356C15.9274 6.12356 18.75 8.79021 18.75 12.1482H20.3629C20.3629 8.00009 16.9355 4.64209 12.7016 4.64209V6.12356H12.6008Z"/>
+                </svg>
+            </div>
           </label>
         </fieldset>
         <fieldset class="form__group form__group--email form__group-color">
@@ -170,7 +179,11 @@
           </div>
           <label for="email">
             <span class="visually-hidden">Введите ваш email.</span>
-            <input class="form__input-email form__color" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            <div class="form__input-wrapper">
+
+              <input class="form__input-email form__color" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              <svg class="form__icon form__icon--mail" xmlns="http://www.w3.org/2000/svg" width="32" height="21" fill="none"><path d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2l7.8-5.9 4.4 3.3a3 3 0 0 0 3.6 0l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24a2 2 0 0 1 2 2l-12.8 9.6Z"/></svg>
+            </div>
           </label>
         </fieldset>
         <fieldset class="form__group form__group--last">
@@ -217,13 +230,11 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__wrapper">
+    <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="main-footer__copyright">Разработано:</span>
-        <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип htmlacademy.</span>
-          <svg class="main-footer__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="#63d1bb"><path d="M13.76 0h-.1L.22 1.4v24.62L13.66 34 27 26.02V1.4L13.76 0ZM25.1 12.06 13.66 5.28v-.1h-.1l-.1-.1v.1L2.11 12.06V3.1l11.45-1.2 11.55 1.2v8.97ZM13.56 6.78l11.45 6.68-4.48 2.6-7.07-4.2v1.4l5.87 3.5-.9.49-4.97-3v1.4l3.78 2.3-.8.5-2.98-1.8v1.4l1.9 1.1-1.8 1.1-11.35-6.69 11.35-6.78ZM2.11 15.06l11.35 6.78v1l-7.87-4.7v1.4l7.97 4.79v1.1l-7.97-4.7v1.4l7.97 4.8 8.06-4.9v-5.18l3.39-2v9.98L13.56 31.7 2.11 24.93v-9.87Z"/></svg>
-        </a>
-    </div>
+      <span class="visually-hidden">Логотип htmlacademy.</span>
+      <svg class="main-footer__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="#63d1bb"><path d="M13.76 0h-.1L.22 1.4v24.62L13.66 34 27 26.02V1.4L13.76 0ZM25.1 12.06 13.66 5.28v-.1h-.1l-.1-.1v.1L2.11 12.06V3.1l11.45-1.2 11.55 1.2v8.97ZM13.56 6.78l11.45 6.68-4.48 2.6-7.07-4.2v1.4l5.87 3.5-.9.49-4.97-3v1.4l3.78 2.3-.8.5-2.98-1.8v1.4l1.9 1.1-1.8 1.1-11.35-6.69 11.35-6.78ZM2.11 15.06l11.35 6.78v1l-7.87-4.7v1.4l7.97 4.79v1.1l-7.97-4.7v1.4l7.97 4.8 8.06-4.9v-5.18l3.39-2v9.98L13.56 31.7 2.11 24.93v-9.87Z"/></svg>
+    </a>
     </div>
 </footer>
 <script src="js/script.js"></script>

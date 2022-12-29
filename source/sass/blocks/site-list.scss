@@ -17,10 +17,14 @@
 
   @media (min-width: $vp-768) {
     padding: 20px 0;
+
+    font-size: 15px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 20px 20px 20px 0;
+    padding: 32px 20px 32px 0;
+
+    font-size: 17px;
   }
 }
 
@@ -52,18 +56,19 @@
 
       width: 200vw;
 
-      background-color: #ffffff;
+      background-color: $color-white;
     }
 
+    /*
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
-
-      width: 200%;
-
-      border-bottom: 1px solid rgba($color-black, 0.1);
-    }
+      bottom: 2px;
+      width: 200vw;
+      height: 1px;
+      color:rgba($color-black, 0.1);
+      /*border-bottom: 1px solid rgba($color-black, 0.1);
+    }*/
   }
 }
 
