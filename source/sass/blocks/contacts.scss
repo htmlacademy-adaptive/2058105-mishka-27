@@ -104,9 +104,12 @@
 }
 
 .contacts__wrapper {
-  width: 260px;
   margin: 0 auto;
-  padding: 42px 0 39px;
+  padding: 42px 30px 39px;
+
+  @media (max-width: $vp-768) {
+    max-width: 400px;
+  }
 
   @media (min-width: $vp-768) {
     width: 230px;

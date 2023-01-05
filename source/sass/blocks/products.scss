@@ -16,22 +16,21 @@
 }
 
 .products__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 
-  gap: 30px;
-
-  @media (min-width: $vp-768) {
-    gap: 54px;
+  @media (max-width: $vp-768) {
+    max-width: 400px;
+    margin: 0 auto;
   }
 
+
   @media (min-width: $vp-1150) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+
+    gap: 51px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

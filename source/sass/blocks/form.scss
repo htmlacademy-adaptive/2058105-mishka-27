@@ -387,6 +387,8 @@
   position: absolute;
   top: 14px;
 
+  pointer-events: none;
+
   fill: rgba($color-black, 0.2);
 
   &--tel {
