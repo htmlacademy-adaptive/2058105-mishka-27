@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 115px 97px 50px;
+    padding: 115px 0 50px;
   }
 }
 
@@ -25,7 +25,9 @@
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    padding-bottom: 63px;
+    max-width: 702px;
+    margin: 0 auto;
+    padding-bottom: 80px;
 
     font-size: 17px;
     line-height: 30px;

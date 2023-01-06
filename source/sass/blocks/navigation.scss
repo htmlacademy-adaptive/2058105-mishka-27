@@ -1,15 +1,3 @@
-.navigation__list {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-
-  @media (min-width: $vp-768) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .navigation {
   position: relative;
   z-index: 1;
@@ -19,15 +7,32 @@
   margin: 0 auto;
   padding-top: 80px;
 
+
   @media (min-width: $vp-768) {
     padding-top: 0;
   }
 }
 
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+  }
+}
+
 .navigation__toggle {
   position: absolute;
-  top: 27px;
+  top: 32px;
   right: 30px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $vp-768) {
     display: none;
@@ -42,6 +47,7 @@
   display: block;
 
   transform: translateX(-50%);
+  cursor: pointer;
 
   &:focus,
   &:hover {
@@ -89,7 +95,7 @@
   @media (min-width: $vp-768) {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: min-content min-content;
   }
 }
@@ -100,7 +106,7 @@
 
   @media (min-width: $vp-768) {
     display: block;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 50px 20px 30px;
 
     font-weight: 400;
     font-size: 15px;
@@ -110,5 +116,59 @@
 
     grid-column: 2/3;
     grid-row: 2/3;
+  }
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 14px;
+
+  background: url("../img/svg/menu.svg");
+}
+
+.navigation--closed .navigation__wrapper {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__toggle::before {
+  content: "";
+  position: absolute;
+
+  width: 21px;
+  height: 20px;
+
+  background: url("../img/svg/menu-close.svg");
+}
+
+.navigation--opened .navigation__wrapper {
+  @media (max-width: $vp-767) {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: auto;
+
+    background-color: $color-white;
+  }
+}
+
+.navigation--no-js .navigation__toggle {
+  @media (max-width: $vp-768) {
+
+    display: none;
+  }
+}
+
+.navigation--no-js .navigation__wrapper {
+  @media (max-width: $vp-768) {
+    display: block;
+    position: relative;
   }
 }

@@ -6,12 +6,26 @@
 .production__container {
   display: flex;
   flex-direction: column;
-  margin: 21px 30px 58px;
+  margin: 30px 30px 58px;
 
   border: 1px solid $color-whisper;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba($color-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($color-black, 0.1);
+  }
+
+  @media (min-width: $vp-768) {
+    margin: 53px 50px 64px;
+  }
+
   @media (min-width: $vp-1150) {
     display: grid;
+    margin: 57px 50px 105px;
 
     grid-template-columns: 683px 367px;
     grid-template-rows: min-content min-content;
@@ -19,14 +33,39 @@
 }
 
 .production__title {
-  margin: 0;
-  padding: 22px 34px 26px;
+  display: flex;
+  margin: 22px 0 26px 35px;
+  padding: 0;
 
   font-size: 100%;
   line-height: 24px;
 
   @media (min-width: $vp-768) {
+    margin: 41px 0 24px 42px;
+
     font-size: 20px;
+  }
+
+  @media (min-width: $vp-1150) {
+    flex-direction: column;
+    margin: 41px 0 27px 80px;
+  }
+}
+
+.production__title::before {
+  content: url("../img/svg/video.svg");
+
+  padding-top: 7px;
+  padding-right: 25px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 0;
+    padding-right: 33px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-right: 0;
+    padding-bottom: 27px;
   }
 }
 
@@ -60,14 +99,41 @@
 
 .production__play-button {
   position: absolute;
-  top: 37px;
-  left: 80px;
+  top: calc(50% - 37px);
+  left: calc(50% - 50px);
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__wrapper {
   padding: 35px 34px 33px;
 
+  @media (min-width: $vp-768) {
+    padding: 0 40px 46px;
+  }
+
   @media (min-width: $vp-1150) {
+    padding: 0 57px 60px 80px;
+
     grid-column: 2/3;
   }
+}
+
+.production__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
