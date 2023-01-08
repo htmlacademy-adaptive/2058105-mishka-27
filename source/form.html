@@ -14,7 +14,11 @@
   <header class="main-header main-header-color">
     <nav class="navigation navigation--nojs">
       <a class="navigation__logo" href="index.html">
-        <img class="navigation__image" src="./img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/svg/header-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/svg/header-logo-tablet.svg">
+          <img class="navigation__image" src="./img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        </picture>
       </a>
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню.</span>
