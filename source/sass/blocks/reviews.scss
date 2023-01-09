@@ -34,14 +34,20 @@
   @media (min-width: $vp-768) {
     position: relative;
 
+    margin-bottom: 58px;
     padding: 82px 50px 47px;
 
     background-image: url("../img/content/reviews.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/reviews@2x.jpg");
+    }
   }
 
   @media (min-width: $vp-1150) {
     margin: 0 50px;
+    margin-bottom: 67px;
     padding: 78px 0 96px 174px;
   }
 }
@@ -89,6 +95,7 @@
   }
 
   @media (min-width: $vp-1150) {
+    padding-top: 0;
     padding-bottom: 44px;
   }
 }

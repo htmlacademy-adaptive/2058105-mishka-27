@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>"Мишка"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="main-header">
     <nav class="navigation navigation-no-js">
       <a class="navigation__logo">
-        <img class="navigation__image" src="./img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/svg/header-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/svg/header-logo-tablet.svg">
+          <img class="navigation__image" src="./img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        </picture>
       </a>
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню.</span>
@@ -73,7 +81,6 @@
         </li>
         <li class="promo__item">
           <a class="promo__link promo__link--toys" href="#">Детские<br> игрушки</a>
-
         </li>
       </ul>
     </div>
@@ -100,7 +107,11 @@
           <dd class="popular-product__description">15 см</dd>
         </div>
       </dl>
-      <img class="popular-product__image" src="./img/popular-product.jpg" width="260" height="315" alt="Три вязаные корзинки разных размеров.">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="./img/content/popular-product-desktop.jpg 1x, ./img/content/popular-product-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/content/popular-product-tablet.jpg 1x, ./img/content/popular-product-tablet@2x.jpg 2x">
+        <img class="popular-product__image" src="./img/content/popular-product.jpg" srcset="./img/content/popular-product@2x.jpg 2x" width="260" height="315" alt="Три вязаные корзинки разных размеров.">
+      </picture>
       <span class="popular-product__price">Цена: 990 руб.</span>
       <a class="popular-product__button button" href="#">Заказать</a>
     </div>
@@ -211,27 +222,30 @@
     </div>
   </footer>
   <section class="modal">
-    <h2 class="modal__title">Добавить<br> в корзину</h2>
-    <span class="modal__details">Выберите размер:</span>
-    <form class="modal__form" action="https://echo.htmlacademy.ru">
-      <ul class="modal__list">
-        <li class="modal__item">
-          <label>
-            <input type="checkbox" name="size" value="S" checked>
+    <div class="modal__container">
+      <h2 class="modal__title">Добавить<br> в корзину</h2>
+      <span class="modal__details">Выберите размер:</span>
+      <form class="modal__form" action="https://echo.htmlacademy.ru">
+        <ul class="modal__list">
+          <li class="modal__item">
             <span class="visually-hidden">Размер "S".</span>
-          </label>
-        </li>
-        <li class="modal__item">
-          <input type="checkbox" name="size" value="M">
+            <input class="modal__input visually-hidden" id="size-s" type="checkbox" name="size" value="S" checked>
+            <label class="modal__label" for id="size-s">S</label>
+          </li>
+          <li class="modal__item">
             <span class="visually-hidden">Размер "M".</span>
-        </li>
-        <li class="modal__item">
-          <input type="checkbox" name="size" value="L">
+            <input class="modal-input visually-hidden" id="size-m" type="checkbox" name="size" value="M">
+            <label class="modal__label" for id="size-m">M</label>
+          </li>
+          <li class="modal__item">
             <span class="visually-hidden">Размер "L".</span>
-        </li>
-      </ul>
-      <button class="modal__button button button--modal" type="submit">Добавить</button>
-    </form>
+            <input class="modal__input visually-hidden" type="checkbox" name="size" value="L">
+            <label class="modal__label" for id="size-l">L</label>
+          </li>
+        </ul>
+        <button class="modal__button button button--modal" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
   <script src="js/script.js"></script>
 </body>

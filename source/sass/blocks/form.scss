@@ -130,6 +130,10 @@
   line-height: 18px;
 
   cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    padding-left: 78px;
+  }
 }
 
 .form__label-name {
@@ -297,7 +301,7 @@
 
 .form__input-mark {
   position: absolute;
-  top: -50%;
+  top: -10px;
   left: 0;
 
   box-sizing: border-box;
@@ -307,6 +311,11 @@
   background-color: transparent;
   border: 2px solid $color-charcoal;
   border-radius: 50%;
+
+  @media (min-width: $vp-768) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .form__input-radio:checked + .form__input-mark::before {
@@ -319,6 +328,13 @@
   height: 18px;
 
   background: url("../img/svg/radio.svg") no-repeat center;
+
+  @media (min-width: $vp-768) {
+    top: 14px;
+    left: 15px;
+
+    scale: 1.3;
+  }
 }
 
 .form__color:hover,
@@ -359,6 +375,11 @@
 
   background-color: transparent;
   border: 2px solid $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .form__input-checkbox:checked + .form__input-color::before {
@@ -371,6 +392,13 @@
   height: 16px;
 
   background: url("../img/svg/checkbox.svg") no-repeat center;
+
+  @media (min-width: $vp-768) {
+    top: 16px;
+    left: 12px;
+
+    scale: 1.3;
+  }
 }
 
 .form__item-name {
