@@ -213,6 +213,7 @@
 .popular-product__wrapper-title {
   @media (min-width: $vp-768) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 37px;
   }

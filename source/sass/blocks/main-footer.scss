@@ -41,14 +41,26 @@
   color: $color-black;
 }
 
-.main-footer__icon:focus,
-.main-footer__icon:hover,
+.main-footer__icon {
+  &--academy {
+    fill: $color-downy;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $color-puerto;
+  }
+
+  &:active {
+    fill: rgba($color-puerto, 0.3);
+  }
+}
+
 .main-footer__link:focus .main-footer__icon,
 .main-footer__link:hover .main-footer__icon {
   fill: $color-puerto;
 }
 
-.main-footer__icon:active,
 .main-footer__link:active .main-footer__icon {
   fill: rgba($color-puerto, 0.3);
 }
