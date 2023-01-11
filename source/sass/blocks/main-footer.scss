@@ -31,6 +31,7 @@
   @media (min-width: $vp-768) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 51px 50px 58px;
   }
 }
@@ -43,6 +44,8 @@
 
 .main-footer__icon {
   &--academy {
+    margin-top: -5px;
+
     fill: $color-downy;
   }
 
@@ -75,6 +78,7 @@
 
 .main-footer__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 182px;
   margin: 0 auto;

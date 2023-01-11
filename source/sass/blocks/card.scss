@@ -4,17 +4,17 @@
   border: 1px solid $color-whisper;
   cursor: pointer;
 
-  @media (max-width: $vp-768) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
   }
+
 
   @media (min-width: $vp-768) {
     display: flex;
 
     &:not(:last-child) {
-      margin-bottom: 54px;
+      margin-bottom: 52px;
     }
   }
 
@@ -56,7 +56,7 @@
     color: rgba($color-black, 0.3);
   }
 
-  @media (min-width: $vp-1150) {
+  @media (min-width: $vp-768) {
     padding-bottom: 10px;
 
     font-size: 20px;
@@ -75,6 +75,7 @@
 
 .card__description {
   flex-grow: 1;
+  margin: 0;
   padding-bottom: 18px;
 
   font-weight: 400;
@@ -96,6 +97,10 @@
 .card__price {
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $vp-768) {
+    font-size: 17px;
+  }
 }
 
 .card__wrapper-price {
@@ -113,7 +118,7 @@
 
   @media (min-width: $vp-768) {
     flex-grow: 1;
-    padding: 27px 39px  26px 34px;
+    padding: 27px 27px  26px 34px;
   }
 
   @media (min-width: $vp-1150) {

@@ -50,7 +50,7 @@
               <svg class="user-list__icon" aria-hidden="true" focusable="false" width="22" height="18">
                 <use xlink:href="./img/sprite.svg#cart"></use>
               </svg>
-              Корзина пока пуста
+              Корзина: пока пуста
             </a>
           </li>
         </ul>
@@ -92,11 +92,11 @@
   <section class="popular-product">
     <div class="popular-product__container">
       <div class="popular-product__wrapper-title">
-        <h2 class="popular-product__title">Вязаные корзинки</h2>
+        <h2 class="popular-product__title">Вязаные&nbsp;корзинки</h2>
         <p class="popular-product__definition">товар недели</p>
       </div>
       <p class="popular-product__text">Экологически чистая пряжа,<br>
-      ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+      ручная&nbsp;работа.&nbsp;Доступны&nbsp;в&nbsp;шести расцветках и трёх размерах.</p>
       <dl class="popular-product__about">
         <div class="popular-product__wrapper">
           <dt class="popular-product__feature">Цвет:</dt>
@@ -112,6 +112,9 @@
         </div>
       </dl>
       <picture>
+        <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/popular-product-desktop.webp 1x, img/content/popular-product-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/content/popular-product-tablet.webp 1x, img/content/popular-product-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/content/popular-product.webp 1x, img/content/popular-product@2x.webp 2x">
         <source media="(min-width: 1150px)" srcset="./img/content/popular-product-desktop.jpg 1x, ./img/content/popular-product-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="./img/content/popular-product-tablet.jpg 1x, ./img/content/popular-product-tablet@2x.jpg 2x">
         <img class="popular-product__image" src="./img/content/popular-product.jpg" srcset="./img/content/popular-product@2x.jpg 2x" width="260" height="315" alt="Три вязаные корзинки разных размеров.">
@@ -137,7 +140,7 @@
           Связано вручную<br> с любовью и умилением
         </li>
         <li class="advantages__item advantages__item--rocket">
-          Поддержка отечественного<br> производителя
+          Поддержка&nbsp;отечественного<br> производителя
         </li>
         <li class="advantages__item advantages__item--gift">
           Поставляется<br> в подарочной упаковке
@@ -150,8 +153,8 @@
       <h2 class="reviews__title">Отзывы</h2>
       <blockquote class="reviews__content">
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-          у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
+          и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
         <div class="reviews__autor">
           <cite class="reviews__autor-name">Анастасия Красильникова</cite>
@@ -166,7 +169,7 @@
           <span class="visually-hidden">Следующий отзыв.</span>
         </button>
       </div>
-      <a class="reviews__write-button button" href="#">Написать</a>
+      <a class="reviews__write-button button button--size" href="#">Написать</a>
     </div>
     </section>
     <section class="contacts">
@@ -187,7 +190,7 @@
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871600612!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1671551866483!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contacts__wrapper">
-          <a class="contacts__button button" href="#">Напишите нам</a>
+          <a class="contacts__button button button--size" href="#">Напишите нам</a>
         </div>
       </section>
   </main>
@@ -226,7 +229,7 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт Html Academy">
         <span class="main-footer__copyright">Разработано:</span>
         <span class="visually-hidden">Логотип htmlacademy.</span>
         <svg class="main-footer__icon main-footer__icon--academy" aria-hidden="true" focusable="false" width="27" height="34">

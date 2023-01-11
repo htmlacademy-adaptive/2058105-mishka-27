@@ -50,7 +50,7 @@
               <svg class="user-list__icon user_list__icon-cart" aria-hidden="true" focusable="false" width="21" height="18">
                 <use xlink:href="./img/sprite.svg#cart"></use>
               </svg>
-              Корзина пока пуста
+              Корзина: пока пуста
             </a>
           </li>
         </ul>
@@ -78,10 +78,8 @@
       <div class="form-section__container">
         <p class="form-section__description"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form-section__content form" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__group form__group--type">
-          <div class="form__legend">
-            <legend class="form__title">Тип</legend>
-          </div>
+        <div class="form__group form__group--type">
+          <h3 class="form__title">Тип</h3>
           <ul class="form__list">
             <li class="form__item form__item-radio">
               <label class="form__label">
@@ -98,12 +96,10 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__group form__group--color form__group-color">
-          <div>
-            <legend class="form__title">Цвет</legend>
-          </div>
-          <ul class="form__list form__list-color">
+        </div>
+        <div class="form__group form__group--color form__group-color">
+          <h3 class="form__title">Цвет</h3>
+            <ul class="form__list form__list-color">
             <li class="form__item form__item-color">
               <label class="form__label">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="color" value="white" checked>
@@ -147,63 +143,55 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__group form__group--name">
-          <div>
-            <legend class="form__title">ФИО</legend>
-          </div>
-          <ul class="form__list">
+        </div>
+        <div class="form__group form__group--name">
+          <h3 class="form__title">ФИО</h3>
+            <ul class="form__list">
             <li class="form__item form__item--name">
-              <label class="form__label-name" for="user-name">Имя</label>
+              <label class="form__label-name" for="user-name">Имя:</label>
               <input class="form__input form__color" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя*" required>
             </li>
             <li class="form__item form__item--name">
-              <label class="form__label-name" for="user-surname">Фамилия</label>
+              <label class="form__label-name" for="user-surname">Фамилия:</label>
               <input class="form__input form__color" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию*" required>
             </li>
             <li class="form__item form__item--name">
-              <label class="form__label-name" for="user-patronymic">Отчество</label>
+              <label class="form__label-name" for="user-patronymic">Отчество:</label>
               <input class="form__input form__color" id="user-patronymic" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__group form__group--tel form__group-color">
-          <div>
-            <legend class="form__title">тел</legend>
-          </div>
-          <label for="number">
+        </div>
+        <div class="form__group form__group--tel form__group-color">
+          <h3 class="form__title form__title--tel">тел</h3>
+            <label for="number">
             <span class="visually-hidden">Введите ваш номер телефона.</span>
             <div class="form__input-wrapper">
               <input class="form__input-number form__color" type="tel" name="number" id="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              <svg class="form__icon form__icon--tel" width="25" height="24">
+              <svg class="form__icon form__icon--tel" aria-hidden="true" focusable="false" width="25" height="24">
                 <use xlink:href="./img/sprite.svg#phone"></use>
               </svg>
             </div>
           </label>
-        </fieldset>
-        <fieldset class="form__group form__group--email form__group-color">
-          <div>
-            <legend class="form__title">e-mail</legend>
-          </div>
+        </div>
+        <div class="form__group form__group--email form__group-color">
+          <h3 class="form__title form__title--mail">e-mail</h3>
           <label for="email">
             <span class="visually-hidden">Введите ваш email.</span>
             <div class="form__input-wrapper">
               <input class="form__input-email form__color" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-              <svg class="form__icon form__icon--mail" width="32" height="21">
+              <svg class="form__icon form__icon--mail" aria-hidden="true" focusable="false" width="32" height="21">
                 <use xlink:href="./img/sprite.svg#mail"></use>
               </svg>
             </div>
           </label>
-        </fieldset>
-        <fieldset class="form__group form__group--last">
-          <div>
-            <legend class="form__title">доп</legend>
-          </div>
+        </div>
+        <div class="form__group form__group--last">
+          <h3 class="form__title form__title--last">доп</h3>
           <label>
             <span class="visually-hidden">Напишите ваши пожелания к заказу.</span>
-          <textarea class="form__textarea form__color" rows="6" name="details" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form__textarea form__color" rows="5" name="details" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
-        </fieldset>
+        </div>
         <div class="form__wrapper-button">
           <span class="form__remark">*Поля обязательны для заполнения</span>
           <button class="form__button button button--form" type="submit">Отправить заказ</button>
@@ -247,7 +235,7 @@
         </a>
       </li>
     </ul>
-    <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт Html Academy">
       <span class="main-footer__copyright">Разработано:</span>
       <span class="visually-hidden">Логотип htmlacademy.</span>
       <svg class="main-footer__icon main-footer__icon--academy" aria-hidden="true" focusable="false" width="27" height="34" fill="#63d1bb">
