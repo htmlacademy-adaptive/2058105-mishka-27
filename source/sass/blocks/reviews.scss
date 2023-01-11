@@ -34,7 +34,7 @@
   @media (min-width: $vp-768) {
     position: relative;
 
-    margin-bottom: 58px;
+    margin-bottom: 70px;
     padding: 82px 50px 47px;
 
     background-image: url("../img/content/reviews.jpg");
@@ -60,6 +60,7 @@
   line-height: 30px;
 
   @media (min-width: $vp-768) {
+    max-width: 450px;
     padding-bottom: 38px;
 
     font-size: 43px;
@@ -88,7 +89,6 @@
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    padding-top: 38px;
     padding-bottom: 61px;
 
     font-size: 17px;
@@ -112,6 +112,12 @@
   @media (min-width: $vp-768) {
     font-size: 18px;
   }
+
+  @media (min-width: $vp-1150) {
+    padding-bottom: 3px;
+
+    font-size: 17px;
+  }
 }
 
 .reviews__autor-link {
@@ -128,8 +134,15 @@
 
   @media (min-width: $vp-768) {
     position: absolute;
-    top: 352px;
-    right: 50px;
+    right: 55px;
+    bottom: 9px;
+
+    gap: 7px;
+  }
+
+  @media (min-width: $vp-1150) {
+    right: 5px;
+    bottom: 58px;
   }
 }
 
@@ -169,11 +182,13 @@
 .reviews__write-button {
   @media (min-width: $vp-768) {
     position: absolute;
-    top: 82px;
+    top: 77px;
     right: 50px;
 
     width: 175px;
+  }
 
-    font-size: 17px;
+  @media (min-width: $vp-1150) {
+    right: 0;
   }
 }

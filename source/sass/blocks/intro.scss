@@ -1,12 +1,13 @@
 .intro {
   position: relative;
 
+  box-sizing: border-box;
   min-height: 177px;
 
   background-color: $color-white-smoke;
 
   @media (min-width: $vp-768) {
-    min-height: 238px;
+    min-height: 180px;
 
     &::after {
       content: "";
@@ -21,7 +22,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    min-height: 272px;
+    min-height: 211px;
 
     &::after {
       content: "";
@@ -39,13 +40,22 @@
 .intro__title {
   margin: 0;
   padding-top: 73px;
+  padding-bottom: 30px;
 
   font-size: 27px;
   line-height: 30px;
   text-align: center;
 
   @media (min-width: $vp-768) {
+    padding-top: 57px;
+    padding-bottom: 20px;
+
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
