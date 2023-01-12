@@ -34,7 +34,7 @@
   flex-direction: column;
   padding: 31px 30px 36px 30px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: 767px) {
     max-width: 400px;
     margin: 0 auto;
   }
@@ -42,11 +42,11 @@
   @media (min-width: $vp-768) {
     position: relative;
 
-    padding: 54px 50px 68px;
+    padding: 52px 50px 55px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 115px 50px 73px 225px;
+    padding: 130px 50px 73px 225px;
   }
 }
 
@@ -93,20 +93,22 @@
 
   @media (min-width: $vp-768) {
     width: 100px;
+    padding-right: 15px;
 
+    line-height: 17px;
     text-align: center;
   }
 
   @media (min-width: $vp-1150) {
     position: absolute;
-    top: 123px;
+    top: 135px;
     left: 82px;
   }
 }
 
 .popular-product__text {
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 21px;
 
   font-weight: 400;
   font-size: 15px;
@@ -115,7 +117,7 @@
 
   @media (min-width: $vp-768) {
     padding-right: 377px;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
 
     font-size: 17px;
     line-height: 30px;
@@ -123,7 +125,7 @@
 
   @media (min-width: $vp-1150) {
     max-width: 292px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
   }
 }
 
@@ -152,21 +154,20 @@
 
 .popular-product__price {
   display: inline-block;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 25px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: 767px) {
     max-width: 154px;
     margin: 0 auto;
   }
 
   @media (min-width: $vp-768) {
-    padding-bottom: 33px;
-    padding-left: 82px;
+    padding: 0 377px 33px 73px;
 
     font-size: 20px;
   }
@@ -180,13 +181,11 @@
   @media (max-width: $vp-768) {
     width: 100%;
     height: auto;
-
-    object-fit: cover;
   }
 
   @media (min-width: $vp-768) {
     position: absolute;
-    top: 140px;
+    top: 150px;
     right: 50px;
     z-index: -1;
 
@@ -195,7 +194,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    top: 54px;
+    top: 68px;
 
     width: 525px;
     height: 636px;
@@ -213,8 +212,9 @@
 .popular-product__wrapper-title {
   @media (min-width: $vp-768) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 37px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $vp-1150) {

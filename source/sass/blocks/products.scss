@@ -7,11 +7,11 @@
   padding: 30px;
 
   @media (min-width: $vp-768) {
-    padding: 67px 50px 53px;
+    padding: 78px 50px 53px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 111px 50px 57px;
+    padding: 126px 50px 57px;
   }
 }
 
@@ -26,11 +26,10 @@
     margin: 0 auto;
   }
 
-
   @media (min-width: $vp-1150) {
     display: grid;
 
-    gap: 51px;
+    gap: 49px;
     grid-template-columns: repeat(3, 1fr);
   }
 }

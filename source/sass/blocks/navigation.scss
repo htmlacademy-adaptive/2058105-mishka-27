@@ -28,8 +28,8 @@
 
 .navigation__toggle {
   position: absolute;
-  top: 32px;
-  right: 30px;
+  top: 30px;
+  right: 45px;
 
   background-color: transparent;
   border: none;
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $vp-768) {
-    left: 40px;
+    left: 50px;
 
     width: 113px;
     height: 46px;
@@ -102,7 +102,7 @@
 
   @media (min-width: $vp-768) {
     display: block;
-    padding: 20px 50px 20px 30px;
+    padding: 20px 50px 0 30px;
 
     font-weight: 400;
     font-size: 15px;
@@ -126,7 +126,7 @@
 }
 
 .navigation--closed .navigation__wrapper {
-  @media (max-width: $vp-767) {
+  @media (max-width: 767.9px) {
     display: none;
   }
 }
