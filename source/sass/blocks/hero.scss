@@ -48,6 +48,10 @@
   line-height: 30px;
   text-align: center;
 
+  @media (min-width: 390px) {
+    padding: 73px 30px 150px;
+  }
+
   @media (min-width: $vp-768) {
     padding: 110px 50px 372px;
 
