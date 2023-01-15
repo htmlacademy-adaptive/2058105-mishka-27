@@ -9,6 +9,10 @@
   height: 100%;
 
   background-color: rgba($color-white, 0.9);
+
+  &--open {
+    display: flex;
+  }
 }
 
 .modal__container {
@@ -87,15 +91,12 @@
   border: 2px solid rgba($color-charcoal, 0.1);
   cursor: pointer;
 
-  transition: all 80ms;
-
   &:hover,
   &:focus {
     border-color: rgba($color-charcoal, 0.3);
   }
 }
 
-.modal__input:active + .modal__label,
 .modal__input:checked + .modal__label {
   border-color: $color-downy;
 }
