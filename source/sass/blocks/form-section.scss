@@ -7,18 +7,18 @@
   padding: 17px 28px 55px 28px;
 
   @media (min-width: $vp-768) {
-    padding: 66px 50px 50px;
+    padding: 66px 50px 55px;
   }
 
   @media (min-width: $vp-1150) {
-    padding: 115px 0 50px;
+    padding: 115px 0 52px;
   }
 }
 
 .form-section__description {
   margin: 0;
   padding-bottom: 29px;
-
+  padding-right: 5px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -28,7 +28,7 @@
     max-width: 702px;
     margin: 0 auto;
     padding-bottom: 80px;
-
+    padding-right: 0;
     font-size: 17px;
     line-height: 30px;
   }
