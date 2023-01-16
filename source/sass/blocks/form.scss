@@ -38,19 +38,19 @@
     grid-template-columns: 150px auto;
 
     &--type {
-      padding-bottom: 67px;
+      padding-bottom: 69px;
     }
 
     &--color {
-      padding: 65px 0 75px;
+      padding: 65px 0 69px;
     }
 
     &--name {
-      padding: 66px 0 50px;
+      padding: 66px 0 44px;
     }
 
     &--tel {
-      padding: 60px 0 29px;
+      padding: 65px 0 29px;
     }
 
     &--email {
@@ -68,9 +68,14 @@
     gap: 40px;
     grid-template-columns: 88px auto;
 
+    &--type {
+      padding-bottom: 65px;
+    }
+
     &--color {
       margin: 0 97px;
-      padding-bottom: 70px;
+      padding-bottom: 68px;
+      padding-top: 67px;
     }
 
     &--name {
@@ -167,14 +172,14 @@
   @media (min-width: $vp-768) {
     display: grid;
 
-    column-gap: 3%;
+    column-gap: 4%;
 
     grid-template-columns: 1fr 1fr;
-    row-gap: 55px;
+    row-gap: 58px;
   }
 
   @media (min-width: $vp-1150) {
-    column-gap: 20px;
+    column-gap: 24px;
 
     grid-template-columns: 240px 240px 240px;
   }
@@ -261,7 +266,6 @@
 .form__input {
   width: 100%;
   padding: 16px 0;
-
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -273,7 +277,6 @@
   @media (min-width: $vp-768) {
     flex-grow: 1;
     padding: 0 10px 14px 20px;
-
     font-size: 19px;
   }
 }
@@ -281,7 +284,7 @@
 .form__input-number {
   box-sizing: border-box;
   width: 100%;
-  padding: 14px 40px 20px 0;
+  padding: 17px 40px 20px 0;
 
   font-weight: 400;
   font-size: 17px;
@@ -314,7 +317,7 @@
   border-bottom: 2px solid $color-black;
 
   @media (min-width: $vp-768) {
-    padding: 0 40px 19px 18px;
+    padding: 0 40px 18px 18px;
 
     font-size: 19px;
   }
@@ -368,7 +371,7 @@
 .form__input-mark {
   position: absolute;
   top: -10px;
-  left: 0;
+  left: 3px;
 
   box-sizing: border-box;
   width: 38px;
@@ -377,6 +380,12 @@
   background-color: transparent;
   border: 2px solid $color-charcoal;
   border-radius: 50%;
+
+  &--interior {
+    @media (max-width: 340px) {
+      top: -3px;
+    }
+  }
 
   @media (min-width: $vp-768) {
     width: 50px;
@@ -422,6 +431,11 @@
 .form__input-checkbox:active + .form__input-color,
 .form__input-radio:active + .form__input-mark {
   border-color: rgba($color-black, 0.3);
+}
+
+.form__input-radio:disabled + .form__input-mark,
+.form__input-checkbox:disabled + .form__input-color {
+  border-color: $color-whisper;
 }
 
 .form__color:active + .form__icon,

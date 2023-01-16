@@ -49,7 +49,7 @@
           </li>
           <li class="user-list__item">
             <a class="user-list__link user-list__link--cart" href="#">
-              <svg class="user-list__icon user_list__icon-cart" aria-hidden="true" focusable="false" width="21" height="18">
+              <svg class="user-list__icon" aria-hidden="true" focusable="false" width="21" height="18">
                 <use xlink:href="./img/sprite/sprite.svg#cart"></use>
               </svg>
               Корзина: пока пуста
@@ -86,7 +86,7 @@
             <li class="form__item form__item-radio">
               <label class="form__label">
                 <input class="form__input-radio visually-hidden" type="radio" name="type-of-product" value="interior" checked>
-                <span class="form__input-mark"></span>
+                <span class="form__input-mark form__input-mark--interior"></span>
                   Аксессуар для интерьера
               </label>
             </li>
@@ -165,27 +165,27 @@
         </div>
         <div class="form__group form__group--tel form__group-color">
           <h3 class="form__title form__title--tel">тел</h3>
-            <label for="number">
-            <span class="visually-hidden">Введите ваш номер телефона.</span>
             <div class="form__input-wrapper">
+              <label for="number">
+              <span class="visually-hidden">Введите ваш номер телефона.</span>
               <input class="form__input-number form__color" type="tel" name="number" id="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <svg class="form__icon form__icon--tel" aria-hidden="true" focusable="false" width="25" height="24">
                 <use xlink:href="./img/sprite/sprite.svg#phone"></use>
               </svg>
+            </label>
             </div>
-          </label>
         </div>
         <div class="form__group form__group--email form__group-color">
           <h3 class="form__title form__title--mail">e-mail</h3>
-          <label for="email">
-            <span class="visually-hidden">Введите ваш email.</span>
             <div class="form__input-wrapper">
+              <label for="email">
+              <span class="visually-hidden">Введите ваш email.</span>
               <input class="form__input-email form__color" type="email" name="email" id="email" placeholder="Ваш Email*" required>
               <svg class="form__icon form__icon--mail" aria-hidden="true" focusable="false" width="32" height="21">
                 <use xlink:href="./img/sprite/sprite.svg#mail"></use>
               </svg>
+            </label>
             </div>
-          </label>
         </div>
         <div class="form__group form__group--last">
           <h3 class="form__title form__title--last">доп</h3>
