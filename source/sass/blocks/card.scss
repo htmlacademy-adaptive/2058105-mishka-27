@@ -4,9 +4,8 @@
   border: 1px solid $color-whisper;
   cursor: pointer;
 
-
   &:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 
 
@@ -71,6 +70,15 @@
   display: block;
 
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .card__description {
@@ -118,7 +126,7 @@
 
   @media (min-width: $vp-768) {
     flex-grow: 1;
-    padding: 27px 27px  26px 34px;
+    padding: 29px 27px 23px 32px;
   }
 
   @media (min-width: $vp-1150) {

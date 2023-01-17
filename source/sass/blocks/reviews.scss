@@ -103,6 +103,7 @@
 .reviews__autor {
   display: flex;
   flex-direction: column;
+  max-width: 450px;
 }
 
 .reviews__autor-name {
@@ -184,7 +185,7 @@
     position: absolute;
     top: 77px;
     right: 50px;
-
+    box-sizing: border-box;
     width: 175px;
   }
 

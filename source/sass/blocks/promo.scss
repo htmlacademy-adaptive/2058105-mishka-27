@@ -3,7 +3,7 @@
 
   background-color: $color-snow;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     overflow: hidden;
   }
 
@@ -34,12 +34,10 @@
   }
 }
 
-
 .promo__container {
   max-width: 1150px;
   margin: 0 auto;
 }
-
 
 .promo__list {
   margin: 0;
@@ -126,10 +124,6 @@
   }
 }
 
-.form__label-name {
-  text-align: center;
-}
-
 .promo__link--interior::after {
   content: url("../img/svg/interior.svg");
   position: absolute;
@@ -150,7 +144,6 @@
   right: 27px;
 
   opacity: 0.5;
-
 
   @media (min-width: $vp-768) {
     top: 31px;
