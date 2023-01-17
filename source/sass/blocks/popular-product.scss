@@ -28,7 +28,6 @@
   }
 }
 
-
 .popular-product__container {
   display: flex;
   flex-direction: column;
@@ -75,9 +74,11 @@
   display: grid;
   padding: 7px 0 12px;
 
+  column-gap: 12px;
+
   border-bottom: 1px solid $color-whisper;
 
-  grid-template-columns: 97px auto;
+  grid-template-columns: 85px 162px;
 }
 
 .popular-product__definition {
@@ -140,7 +141,6 @@
   line-height: 20px;
   color: $color-charcoal;
 
-
   @media (min-width: $vp-768) {
     padding-right: 377px;
     padding-bottom: 57px;
@@ -167,6 +167,7 @@
   }
 
   @media (min-width: $vp-768) {
+    max-width: 200px;
     padding: 0 377px 33px 73px;
 
     font-size: 20px;

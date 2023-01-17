@@ -4,7 +4,7 @@
 }
 
 .form-section__container {
-  padding: 17px 28px 55px 28px;
+  padding: 17px 28px 57px 30px;
 
   @media (min-width: $vp-768) {
     padding: 66px 50px 55px;
@@ -17,8 +17,9 @@
 
 .form-section__description {
   margin: 0;
-  padding-bottom: 29px;
   padding-right: 5px;
+  padding-bottom: 29px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -27,8 +28,9 @@
   @media (min-width: $vp-768) {
     max-width: 702px;
     margin: 0 auto;
-    padding-bottom: 80px;
     padding-right: 0;
+    padding-bottom: 80px;
+
     font-size: 17px;
     line-height: 30px;
   }

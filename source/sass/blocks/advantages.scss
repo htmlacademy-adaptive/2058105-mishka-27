@@ -53,6 +53,8 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 83px;
+
+    column-gap: 15px;
   }
 
   @media (min-width: $vp-1150) {
@@ -69,7 +71,7 @@
   line-height: 20px;
 
   @media (min-width: $vp-768) {
-    width: 50%;
+    width: 48%;
 
     font-size: 20px;
     line-height: 22px;
